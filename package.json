@@ -1,14 +1,14 @@
 {
-  "name": "movie-emah",
+  "name": "anime-emah",
   "version": "1.0.0",
-  "description": "movie app",
+  "description": "anime app",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
-  "author": "khuzaemah | khuza.emah24@gmail.com",
+  "author": "khuzaemah",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.20.2",
@@ -23,6 +23,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "regenerator-runtime": "^0.13.10"
   }
 }

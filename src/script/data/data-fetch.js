@@ -1,6 +1,6 @@
-class DataSource {
-    static searchAnime(keyword) {
-        return fetch(`https://kitsu.io/api/edge/anime?filter[text]=${keyword}`, {
+class DataFetch {
+    static fetchAnime(keyword) {
+        return fetch(`https://kitsu.io/api/edge/anime`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/vnd.api+json',
@@ -22,4 +22,4 @@ class DataSource {
     }
 }
 
-export default DataSource;
+export default DataFetch;
