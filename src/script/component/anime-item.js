@@ -26,13 +26,13 @@ class AnimeItem extends HTMLElement {
           overflow: hidden;
         }
         .anime-info {
-          padding: 24px;
+          padding: 15px;
         }
         .anime-info > img {
           max-height: 300px;
           padding-bottom: 20px;
         }
-        .anime-info > h2 {
+        .anime-info > h3 {
           font-weight: lighter;
         }
         .anime-info > p {
@@ -43,9 +43,13 @@ class AnimeItem extends HTMLElement {
       </style>
       
       <div class="anime-info">
-      <img src="${this._anime.attributes.posterImage.small}" alt="Anime">
-        <h2>${this._anime.attributes.titles.en_jp}</h2>
-        <p>${this._anime.attributes.description}</p>
+        <div class="card" style="width: 18rem;">
+          <img src="${this._anime.attributes.posterImage.small}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">${this._anime.attributes.titles.en_jp}</h3>
+            <p class="card-text">${this._anime.attributes.description}</p>
+          </div>
+        </div>
       </div>
     `;
   }

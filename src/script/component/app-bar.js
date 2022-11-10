@@ -28,7 +28,7 @@ class AppBar extends HTMLElement {
           padding: 16px;
         }
       </style>
-      
+
       <h2>Anime Finder</h2>
         `;
   }

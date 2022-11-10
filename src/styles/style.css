@@ -15,10 +15,19 @@ main {
     /* background-color: rgb(235, 36, 159) */
 }
 
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background: burlywood;
+    color: white;
+    border-radius: 0px 0px 30px 30px;
+}
+
 anime-list {
     display: block;
     margin-top: 32px;
     width: 100%;
     padding: 16px;
-    
+
 }
