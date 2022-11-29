@@ -13,11 +13,6 @@ class AnimeItem extends HTMLElement {
   render() {
     this.shadowDOM.innerHTML = `
       <style>
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
         :host {
           display: block;
           margin-bottom: 18px;
@@ -27,10 +22,8 @@ class AnimeItem extends HTMLElement {
         }
         .anime-info {
           padding: 15px;
-        }
-        .anime-info > img {
-          max-height: 300px;
-          padding-bottom: 20px;
+          margin-left : auto;
+          margin-right : auto;
         }
         .anime-info > h3 {
           font-weight: lighter;
@@ -43,9 +36,9 @@ class AnimeItem extends HTMLElement {
       </style>
       
       <div class="anime-info">
-        <div class="card" style="width: 18rem;">
-          <img src="${this._anime.attributes.posterImage.small}" class="card-img-top" alt="...">
-          <div class="card-body">
+        <div class="card">
+        <div class="card-body text-center">
+            <img src="${this._anime.attributes.posterImage.small}" class="card-img" alt="...">
             <h3 class="card-title">${this._anime.attributes.titles.en_jp}</h3>
             <p class="card-text">${this._anime.attributes.description}</p>
           </div>

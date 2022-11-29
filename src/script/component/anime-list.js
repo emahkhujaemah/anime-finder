@@ -17,7 +17,7 @@ class AnimeList extends HTMLElement {
 
     this._animes.forEach(anime => {
       const animeItemElement = document.createElement('anime-item');
-      animeItemElement.className = "col-md-3";
+      animeItemElement.className = "col-md-3 mt-3";
       animeItemElement.anime = anime;
       this.shadowDOM.appendChild(animeItemElement);
     });
